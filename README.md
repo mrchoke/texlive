@@ -22,6 +22,7 @@ docker run -itd --name texlive  -v $PWD:/data -p 222:22 mrchoke/texlive
 ```
 localhost -p222 -l root
 ```
+**_Password 123456_
 
 You can change root's password with following command.
 
