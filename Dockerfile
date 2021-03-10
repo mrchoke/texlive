@@ -16,6 +16,7 @@ RUN apt update \
   fontconfig \
   python3-pygments \
   python3-pip \
+  python3-venv \
   && apt-get clean autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/{apt,dpkg,cache,log}/ \
