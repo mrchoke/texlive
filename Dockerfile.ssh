@@ -4,8 +4,7 @@ ARG TARGETARCH
 
 LABEL maintainer="Supphachoke Suntiwichaya <mrchoke@gmail.com>"
 
-RUN apt update \
-  && apt install -y ssh \
+RUN apt install -y ssh \
   tmux \
   build-essential \
   libmariadb-dev \

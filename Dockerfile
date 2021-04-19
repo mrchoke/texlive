@@ -1,4 +1,6 @@
-FROM  debian:bullseye-slim
+#FROM  debian:bullseye-slim
+## Bullseye has bug on arm64 
+FROM  debian:buster-slim
 
 ARG TARGETARCH
 
@@ -16,6 +18,11 @@ RUN apt update \
   python3-pygments \
   python3-pip \
   python3-venv \
+  swath \
+  liblog-log4perl-perl \
+  libyaml-tiny-perl \
+  libfile-homedir-perl \
+  libunicode-linebreak-perl \
   && apt-get clean autoclean \
   && apt-get autoremove --yes \
   && rm -rf /var/lib/{apt,dpkg,cache,log}/ \
