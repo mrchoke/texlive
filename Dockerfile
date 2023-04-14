@@ -1,6 +1,4 @@
-#FROM  debian:bullseye-slim
-## Bullseye has bug on arm64 
-FROM  debian:buster-slim
+FROM  debian:bullseye-slim
 
 ARG TARGETARCH
 
