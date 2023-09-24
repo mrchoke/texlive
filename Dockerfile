@@ -30,8 +30,7 @@ RUN apt update \
   &&  locale-gen \
   &&  ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
   &&  mkdir /tmp/install-tl  \
-  && curl https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
- # && curl https://download.nus.edu.sg/mirror/ctan/systems/texlive/tlnet/install-tl-unx.tar.gz \
+  && curl https://mirror.kku.ac.th/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz \
   | tar -xzC /tmp/install-tl --strip-components 1
 
 
